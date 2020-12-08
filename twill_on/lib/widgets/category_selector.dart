@@ -7,12 +7,7 @@ class CategorySelector extends StatefulWidget {
 
 class _CategorySelectorState extends State<CategorySelector> {
   int selectedIndex = 0;
-  final List<String> categories = [
-    'Active',
-    'Available',
-    'Archived',
-    'Requested'
-  ];
+  final List<String> categories = ['Active', 'Available', 'Archived'];
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +24,12 @@ class _CategorySelectorState extends State<CategorySelector> {
               setState(() {
                 selectedIndex = index;
                 print(selectedIndex);
+                if (selectedIndex == 1) {
+                  print("THIS IS avaliable");
+                }
+                if (selectedIndex == 2) {
+                  print("THIS IS ARCHIVE");
+                }
               });
             },
             child: Padding(
