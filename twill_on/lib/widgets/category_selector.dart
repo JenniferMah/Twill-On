@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:twill_on/screens/archived_screen.dart';
+import 'package:twill_on/screens/available_screen.dart';
+import 'package:twill_on/screens/home_screen.dart';
 
 class CategorySelector extends StatefulWidget {
   @override
@@ -24,12 +27,33 @@ class _CategorySelectorState extends State<CategorySelector> {
               setState(() {
                 selectedIndex = index;
                 print(selectedIndex);
+                if (selectedIndex == 0) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => HomeScreen(),
+                    ),
+                  );
+                }
+
                 if (selectedIndex == 1) {
-                  print("THIS IS avaliable");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => AvailableScreen(),
+                    ),
+                  );
                 }
-                if (selectedIndex == 2) {
-                  print("THIS IS ARCHIVE");
-                }
+
+                // if (selectedIndex == 2) {
+                //   Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (_) => ArchivedScreen(),
+                //     ),
+                //   );
+                //   print("THIS IS ARCHIVE");
+                // }
               });
             },
             child: Padding(

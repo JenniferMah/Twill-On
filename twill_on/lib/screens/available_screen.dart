@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:twill_on/widgets/available_company.dart';
 import 'package:twill_on/widgets/category_selector.dart';
-import 'package:twill_on/widgets/recent_chats.dart';
 
-class HomeScreen extends StatefulWidget {
+class AvailableScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _AvailableScreenState createState() => _AvailableScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _AvailableScreenState extends State<AvailableScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor, //makes background red
+      backgroundColor: Colors.green, //makes background blue
       appBar: AppBar(
         leading: IconButton(
-          //menu icon
           icon: Icon(Icons.menu),
           iconSize: 30.0,
           color: Colors.white,
@@ -55,7 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: <Widget>[
                   //recent chats widget
-                  RecentChats(),
+                  // RecentChats(),
+                  AvalibleCompany()
                 ],
               ),
             ),

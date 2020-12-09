@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:twill_on/widgets/category_selector.dart';
 import 'package:twill_on/widgets/recent_chats.dart';
 
-class HomeScreen extends StatefulWidget {
+class ArchivedScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _ArchivedScreenState createState() => _ArchivedScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _ArchivedScreenState extends State<ArchivedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor, //makes background red
+      backgroundColor: Colors.blue, //makes background blue
       appBar: AppBar(
         leading: IconButton(
-          //menu icon
           icon: Icon(Icons.menu),
           iconSize: 30.0,
           color: Colors.white,
