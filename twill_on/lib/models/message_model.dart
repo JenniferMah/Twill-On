@@ -31,12 +31,21 @@ final User nike = User(id: 4, name: 'Nike', imageUrl: 'assets/images/nike.jpg');
 List<Message> currentChats = [
   Message(
     sender: tmobile,
-    time: '2:09 PM',
+    time: '2:06 PM',
     text: 'I want to activate my new phone',
     unread: true,
   )
 ];
 
+//EXAMPLE ARCHIVED MESSAGES
+List<Message> archivedChats = [
+  Message(
+    sender: bestBuy,
+    time: '10:09 PM',
+    text: 'Order #1234329384 should arrive by Thursday',
+    unread: true,
+  )
+];
 // EXAMPLE MESSAGES IN CHAT SCREEN
 List<Message> messages = [
   Message(

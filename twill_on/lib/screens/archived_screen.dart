@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:twill_on/widgets/archived_messages.dart';
 import 'package:twill_on/widgets/category_selector/archive_selector.dart';
-import 'package:twill_on/widgets/recent_chats.dart';
 
 class ArchivedScreen extends StatefulWidget {
   @override
@@ -11,7 +11,7 @@ class _ArchivedScreenState extends State<ArchivedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue, //makes background blue
+      backgroundColor: Colors.red,
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.menu),
@@ -53,8 +53,7 @@ class _ArchivedScreenState extends State<ArchivedScreen> {
               ),
               child: Column(
                 children: <Widget>[
-                  //recent chats widget //can i push onto this
-                  // RecentChats(),
+                  ArchivedChats(),
                 ],
               ),
             ),
