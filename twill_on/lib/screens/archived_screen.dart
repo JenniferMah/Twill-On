@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:twill_on/widgets/category_selector.dart';
+import 'package:twill_on/widgets/category_selector/archive_selector.dart';
 import 'package:twill_on/widgets/recent_chats.dart';
 
 class ArchivedScreen extends StatefulWidget {
@@ -40,7 +40,7 @@ class _ArchivedScreenState extends State<ArchivedScreen> {
       //menu selector/segmented controller
       body: Column(
         children: <Widget>[
-          CategorySelector(),
+          ArchievedSelector(),
           // curved part
           Expanded(
             child: Container(
@@ -53,8 +53,8 @@ class _ArchivedScreenState extends State<ArchivedScreen> {
               ),
               child: Column(
                 children: <Widget>[
-                  //recent chats widget
-                  RecentChats(),
+                  //recent chats widget //can i push onto this
+                  // RecentChats(),
                 ],
               ),
             ),

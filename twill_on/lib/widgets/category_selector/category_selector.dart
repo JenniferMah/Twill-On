@@ -9,7 +9,7 @@ class CategorySelector extends StatefulWidget {
 }
 
 class _CategorySelectorState extends State<CategorySelector> {
-  int selectedIndex = 0;
+  int selectedIndex = 0; //need go pass this in from screen
   final List<String> categories = ['Active', 'Available', 'Archived'];
 
   @override
@@ -26,7 +26,7 @@ class _CategorySelectorState extends State<CategorySelector> {
             onTap: () {
               setState(() {
                 selectedIndex = index;
-                print(selectedIndex);
+                // print(selectedIndex);
                 if (selectedIndex == 0) {
                   Navigator.push(
                     context,
@@ -37,6 +37,7 @@ class _CategorySelectorState extends State<CategorySelector> {
                 }
 
                 if (selectedIndex == 1) {
+                  print(categories[index]);
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -45,15 +46,14 @@ class _CategorySelectorState extends State<CategorySelector> {
                   );
                 }
 
-                // if (selectedIndex == 2) {
-                //   Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (_) => ArchivedScreen(),
-                //     ),
-                //   );
-                //   print("THIS IS ARCHIVE");
-                // }
+                if (selectedIndex == 2) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => ArchivedScreen(),
+                    ),
+                  );
+                }
               });
             },
             child: Padding(

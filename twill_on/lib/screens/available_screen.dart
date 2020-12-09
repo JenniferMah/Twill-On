@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:twill_on/widgets/available_company.dart';
-import 'package:twill_on/widgets/category_selector.dart';
+import 'package:twill_on/widgets/category_selector/avaliable_selector.dart';
 
 class AvailableScreen extends StatefulWidget {
   @override
@@ -11,7 +11,7 @@ class _AvailableScreenState extends State<AvailableScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green, //makes background blue
+      backgroundColor: Colors.red, //makes background blue
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.menu),
@@ -40,7 +40,7 @@ class _AvailableScreenState extends State<AvailableScreen> {
       //menu selector/segmented controller
       body: Column(
         children: <Widget>[
-          CategorySelector(),
+          AvaliableSelector(),
           // curved part
           Expanded(
             child: Container(
@@ -52,11 +52,7 @@ class _AvailableScreenState extends State<AvailableScreen> {
                 ),
               ),
               child: Column(
-                children: <Widget>[
-                  //recent chats widget
-                  // RecentChats(),
-                  AvalibleCompany()
-                ],
+                children: <Widget>[AvalibleCompany()],
               ),
             ),
           ),

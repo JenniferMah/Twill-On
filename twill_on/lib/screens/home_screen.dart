@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:twill_on/widgets/category_selector.dart';
+import 'package:twill_on/widgets/category_selector/category_selector.dart';
 import 'package:twill_on/widgets/recent_chats.dart';
 
 class HomeScreen extends StatefulWidget {

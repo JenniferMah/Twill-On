@@ -21,68 +21,46 @@ final User currentUser =
     User(id: 0, name: 'Current User', imageUrl: 'assets/images/greg.jpg');
 
 // USERS
-final User greg = User(id: 1, name: 'Greg', imageUrl: 'assets/images/greg.jpg');
-final User james = User(
-    id: 2, name: 'Furniture Store', imageUrl: 'assets/images/furniture.jpg');
-final User john = User(id: 3, name: 'John', imageUrl: 'assets/images/john.jpg');
-final User olivia =
-    User(id: 4, name: 'Olivia', imageUrl: 'assets/images/olivia.jpg');
-final User sam = User(id: 5, name: 'Sam', imageUrl: 'assets/images/sam.jpg');
-final User sophia =
-    User(id: 6, name: 'Sophia', imageUrl: 'assets/images/sophia.jpg');
-final User steven =
-    User(id: 7, name: 'Steven', imageUrl: 'assets/images/steven.jpg');
+final User tmobile =
+    User(id: 1, name: 'T-mobile', imageUrl: 'assets/images/tmobile.jpg');
+final User delta =
+    User(id: 2, name: 'Delta', imageUrl: 'assets/images/delta.jpg');
+final User bestBuy =
+    User(id: 3, name: 'Best Buy', imageUrl: 'assets/images/bestbuy.jpg');
+final User nike = User(id: 4, name: 'Nike', imageUrl: 'assets/images/nike.jpg');
 
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
   Message(
-    sender: james,
+    sender: tmobile,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     unread: true,
   ),
   Message(
-    sender: olivia,
+    sender: delta,
     time: '4:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     unread: true,
   ),
   Message(
-    sender: john,
+    sender: bestBuy,
     time: '3:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     unread: false,
   ),
   Message(
-    sender: sophia,
+    sender: nike,
     time: '2:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     unread: true,
-  ),
-  Message(
-    sender: steven,
-    time: '1:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
-    unread: false,
-  ),
-  Message(
-    sender: sam,
-    time: '12:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
-    unread: false,
-  ),
-  Message(
-    sender: greg,
-    time: '11:30 AM',
-    text: 'Hey, how\'s it going? What did you do today?',
-    unread: false,
-  ),
+  )
 ];
 
 // EXAMPLE MESSAGES IN CHAT SCREEN
 List<Message> messages = [
   Message(
-    sender: james,
+    sender: tmobile,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     unread: true,
@@ -94,13 +72,13 @@ List<Message> messages = [
     unread: true,
   ),
   Message(
-    sender: james,
+    sender: tmobile,
     time: '3:45 PM',
     text: 'How\'s the doggo?',
     unread: true,
   ),
   Message(
-    sender: james,
+    sender: tmobile,
     time: '3:15 PM',
     text: 'All the food',
     unread: true,
@@ -112,7 +90,7 @@ List<Message> messages = [
     unread: true,
   ),
   Message(
-    sender: james,
+    sender: tmobile,
     time: '2:00 PM',
     text: 'I ate so much food today.',
     unread: true,
