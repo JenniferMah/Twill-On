@@ -20,9 +20,9 @@ class RecentChats extends StatelessWidget {
             topRight: Radius.circular(30.0),
           ),
           child: ListView.builder(
-            itemCount: chats.length,
+            itemCount: currentChats.length,
             itemBuilder: (BuildContext context, int index) {
-              final Message chat = chats[index];
+              final Message chat = currentChats[index];
               return GestureDetector(
                 onTap: () => Navigator.push(
                   context,

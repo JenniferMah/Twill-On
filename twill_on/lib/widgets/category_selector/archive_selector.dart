@@ -26,7 +26,6 @@ class _ArchievedSelectorState extends State<ArchievedSelector> {
             onTap: () {
               setState(() {
                 selectedIndex = index;
-                // print(selectedIndex);
                 if (selectedIndex == 0) {
                   Navigator.push(
                     context,

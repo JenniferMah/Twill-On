@@ -34,9 +34,9 @@ class AvalibleCompany extends StatelessWidget {
                 // ),
                 child: Container(
                   margin: EdgeInsets.only(
-                      top: 5.0, bottom: 5.0, right: 5.0, left: 5.0),
+                      top: 10.0, bottom: 10.0, right: 5.0, left: 5.0),
                   padding:
-                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 40.0),
+                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
                   decoration: BoxDecoration(
                     color: Color(0xFFFFEFEE),
                     borderRadius: BorderRadius.only(
