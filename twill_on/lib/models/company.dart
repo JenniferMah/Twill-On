@@ -1,3 +1,5 @@
+//All of this data currently populates the avaliable tab
+
 class Company {
   final String companyId;
   final String companyName;
@@ -30,5 +32,10 @@ List<Company> businesses = [
     companyId: 'nike',
     companyName: 'Nike',
     companyImageUrl: 'assets/images/nike.jpg',
+  ),
+  Company(
+    companyId: 'furniture',
+    companyName: 'Furniture Company',
+    companyImageUrl: 'assets/images/furniture.jpg',
   ),
 ];

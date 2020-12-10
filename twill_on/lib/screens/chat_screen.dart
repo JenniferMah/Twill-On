@@ -27,7 +27,7 @@ class _ChatScreenState extends State<ChatScreen> {
       padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),
       width: MediaQuery.of(context).size.width * 0.75,
       decoration: BoxDecoration(
-        color: isMe ? Theme.of(context).accentColor : Color(0xFFFFEFEE),
+        color: isMe ? Theme.of(context).accentColor : Color(0xFFFFE3E3),
         borderRadius: isMe
             ? BorderRadius.only(
                 topLeft: Radius.circular(15.0),
@@ -72,6 +72,7 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   _buildMessageComposer() {
+    var input = '';
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 8.0),
       height: 70.0,
@@ -87,7 +88,9 @@ class _ChatScreenState extends State<ChatScreen> {
           Expanded(
             child: TextField(
               textCapitalization: TextCapitalization.sentences,
-              onChanged: (value) {},
+              onChanged: (value) {
+                input = value;
+              },
               decoration: InputDecoration.collapsed(
                 hintText: 'Send a message...',
               ),
@@ -97,7 +100,10 @@ class _ChatScreenState extends State<ChatScreen> {
             icon: Icon(Icons.send),
             iconSize: 25.0,
             color: Theme.of(context).primaryColor,
-            onPressed: () {},
+            onPressed: () {
+              print(input);
+              //BACKEND: input needs to be sent to the back end to be read
+            },
           ),
         ],
       ),
